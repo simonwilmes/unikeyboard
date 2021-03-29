@@ -144,7 +144,7 @@ xkb_symbols "basis" {
     	symbols[Group1] = [ p,                       P,                       Greek_pi,                Greek_PI,                ampersand,                   variation,               NoSymbol,                NoSymbol                 ] };
 
     key <AD11> {
-    	symbols[Group1] = [ udiaeresis,              Udiaeresis,              apostrophe,              U25AA,                   variation,               Greek_finalsmallsigma,   NoSymbol,                NoSymbol                 ] };
+    	symbols[Group1] = [ udiaeresis,              Udiaeresis,              apostrophe,              EuroSign,                   variation,               Greek_finalsmallsigma,   NoSymbol,                NoSymbol                 ] };
 
     key.type[Group1] = "EIGHT_LEVEL";
     key <AD12> {
@@ -185,7 +185,7 @@ xkb_symbols "basis" {
     key <LSGT> {
         symbols[Group1] = [ less,                    greater,                 bar,                     U2016,                   lessthanequal,              U226A,                brokenbar,                  U2610                 ] };
     key <AB01> {
-    	symbols[Group1] = [ y,                       Y,                       Greek_psi,               Greek_PSI,               EuroSign,        U226B,                   U2714,                   U2611                    ] };
+    	symbols[Group1] = [ y,                       Y,                       Greek_psi,               Greek_PSI,               numbersign,        U226B,                   U2714,                   U2611                    ] };
     key <AB02> {
     	symbols[Group1] = [ x,                       X,                       Greek_xi,                Greek_XI,                dollar,                U03F5,                   U2718,                   U2612                 ] };
     key <AB03> {
