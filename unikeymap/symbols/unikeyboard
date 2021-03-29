@@ -14,7 +14,7 @@ partial modifier_keys xkb_symbols "modifiers" {
     key <RCTL> {
         type[Group1]="ONE_LEVEL",
         symbols[Group1] = [ ISO_Level5_Shift ]
-    };   
+    };
 
 
 //    key <LALT> {
@@ -23,9 +23,8 @@ partial modifier_keys xkb_symbols "modifiers" {
 //    };
 
     key <CAPS> {
-        type[Group1] = "TWO_LEVEL",
-        symbols[Group1] = [ISO_Group_Shift, ISO_Next_Group],
-        symbols[Group2] = [ISO_Prev_Group]
+        type[Group1] = "ONE_LEVEL",
+        symbols[Group1] = [ISO_Level5_Shift ]
     };
 
     modifier_map Mod5 { ISO_Level3_Shift };
@@ -39,7 +38,7 @@ xkb_symbols "basis" {
 	name[Group1]="Unikeyboard";
 
 	// 8 trad. Modifiers: Shift, Lock, Control, Mod1-5
-	// Virtual Modifiers: Meta, Hyper,  
+	// Virtual Modifiers: Meta, Hyper,
 
 
 	// Groups:
@@ -123,57 +122,57 @@ xkb_symbols "basis" {
     // --------------------------------------------------------------
     key.type[Group1] = "EIGHT_LEVEL";
     key <AD01> {
-    	symbols[Group1] = [ q,                       Q,                       at,                      NoSymbol,                U211A,                   U2300,                   NoSymbol,                NoSymbol                 ] };
+    	symbols[Group1] = [ q,                       Q,                       at,                      NoSymbol,                at,                   U2300,                   NoSymbol,                NoSymbol                 ] };
     key <AD02> {
-    	symbols[Group1] = [ w,                       W,                       VoidSymbol,              VoidSymbol,              squareroot,              cuberoot,                NoSymbol,                NoSymbol                 ] };
+    	symbols[Group1] = [ w,                       W,                       VoidSymbol,              VoidSymbol,              underscore,              cuberoot,                NoSymbol,                NoSymbol                 ] };
     key <AD03> {
-    	symbols[Group1] = [ e,                       E,                       Greek_epsilon,           EuroSign,                U2208,                   U2209,                   U2286,                   U228A                 ] };
+    	symbols[Group1] = [ e,                       E,                       Up,           EuroSign,                bracketleft,                   U2209,                   U2286,                   U228A                 ] };
     key <AD04> {
-    	symbols[Group1] = [ r,                       R,                       Greek_rho,               U03F1,                   U211D,                   NoSymbol,                U2102,                   U211C                 ] };
+    	symbols[Group1] = [ r,                       R,                       Greek_rho,               U03F1,                   bracketright,                   NoSymbol,                U2102,                   U211C                 ] };
     key <AD05> {
-    	symbols[Group1] = [ t,                       T,                       Greek_tau,               Greek_TAU,               U22A4,                   U22A5,                   NoSymbol,                trademark                ] };
+    	symbols[Group1] = [ t,                       T,                       Greek_tau,               Greek_TAU,               asciicircum,                   U22A5,                   NoSymbol,                trademark                ] };
 
     key <AD06> {
-    	symbols[Group1] = [ z,                       Z,                       Greek_zeta,              NoSymbol,                U2124,                   U2124,                   NoSymbol,                U2128                 ] };
+    	symbols[Group1] = [ z,                       Z,                       Greek_zeta,              NoSymbol,                exclam,                   U2124,                   NoSymbol,                U2128                 ] };
     key <AD07> {
-    	symbols[Group1] = [ u,                       U,                       Greek_theta,             Greek_THETA,             U221E,                   U27E9,                   NoSymbol,                U03D1                 ] };
+    	symbols[Group1] = [ u,                       U,                       Greek_theta,             Greek_THETA,             less,                   U27E9,                   NoSymbol,                U03D1                 ] };
     key <AD08> {
-    	symbols[Group1] = [ i,                       I,                       U2139,                   VoidSymbol,              integral,                dintegral,               U222D,                   U2111                 ] };
+    	symbols[Group1] = [ i,                       I,                       U2139,                   VoidSymbol,              greater,                dintegral,               U222D,                   U2111                 ] };
     key <AD09> {
-    	symbols[Group1] = [ o,                       O,                       Greek_omega,             Greek_OMEGA,             U222E,                   U222F,                   U2230,                   NoSymbol                 ] };
+    	symbols[Group1] = [ o,                       O,                       Greek_omega,             Greek_OMEGA,             equal,                   U222F,                   U2230,                   NoSymbol                 ] };
     key <AD10> {
-    	symbols[Group1] = [ p,                       P,                       Greek_pi,                Greek_PI,                U220F,                   variation,               NoSymbol,                NoSymbol                 ] };
+    	symbols[Group1] = [ p,                       P,                       Greek_pi,                Greek_PI,                ampersand,                   variation,               NoSymbol,                NoSymbol                 ] };
 
     key <AD11> {
     	symbols[Group1] = [ udiaeresis,              Udiaeresis,              apostrophe,              U25AA,                   variation,               Greek_finalsmallsigma,   NoSymbol,                NoSymbol                 ] };
 
     key.type[Group1] = "EIGHT_LEVEL";
     key <AD12> {
-    	symbols[Group1] = [ plus,                    asterisk,               asciitilde,              NoSymbol,                22C5,                    plusminus,               dead_breve,              NoSymbol                 ] };
+    	symbols[Group1] = [ ISO_Level3_Shift,                    asterisk,               asciitilde,              NoSymbol,                22C5,                    plusminus,               dead_breve,              NoSymbol                 ] };
 
     // Middle row
     // --------------------------------------------------------------
     key.type[Group1] = "EIGHT_LEVEL";
     key <AC01> {
-    	symbols[Group1] = [ a,                       A,                       Greek_alpha,             Greek_ALPHA,             U2221,                   U2222,                   NoSymbol,                U212B                 ] };
+    	symbols[Group1] = [ a,                       A,                       Greek_alpha,             Greek_ALPHA,             backslash,                   U2222,                   NoSymbol,                U212B                 ] };
     key <AC02> {
-    	symbols[Group1] = [ s,                       S,                       Greek_sigma,             Greek_SIGMA,             U2211,                   NoSymbol,                integral,                U017F                    ] };
+    	symbols[Group1] = [ s,                       S,                       Left,             Greek_SIGMA,             slash,                   NoSymbol,                integral,                U017F                    ] };
     key <AC03> {
-    	symbols[Group1] = [ d,                       D,                       Greek_delta,             Greek_DELTA,             partialderivative,       nabla,                   U2300,                  NoSymbol                 ] };
+    	symbols[Group1] = [ d,                       D,                       Down,             Greek_DELTA,             braceleft,       nabla,                   U2300,                  NoSymbol                 ] };
     key <AC04> {
-    	symbols[Group1] = [ f,                       F,                       Greek_phi,               Greek_PHI,               function,                U2131,                   U2109,                   U03D5                    ] };
+    	symbols[Group1] = [ f,                       F,                       Right,               Greek_PHI,               braceright,                U2131,                   U2109,                   U03D5                    ] };
     key <AC05> {
-    	symbols[Group1] = [ g,                       G,                       Greek_gamma,             Greek_GAMMA,             notsign,                 U2201,                   NoSymbol,                NoSymbol                 ] };
+    	symbols[Group1] = [ g,                       G,                       Greek_gamma,             Greek_GAMMA,             asterisk,                 U2201,                   NoSymbol,                NoSymbol                 ] };
     key <AC06> {
-    	symbols[Group1] = [ h,                       H,                       Greek_eta,               Greek_ETA,               logicaland,              intersection,            U266E,                   U210F                    ] };
+    	symbols[Group1] = [ h,                       H,                       Greek_eta,               Greek_ETA,               question,              intersection,            U266E,                   U210F                    ] };
     key <AC07> {
-    	symbols[Group1] = [ j,                       J,                       VoidSymbol,              VoidSymbol,              logicalor,               union,                   NoSymbol,                NoSymbol                 ] }; 
+    	symbols[Group1] = [ j,                       J,                       VoidSymbol,              VoidSymbol,              parenleft,               union,                   NoSymbol,                NoSymbol                 ] };
     key <AC08> {
-    	symbols[Group1] = [ k,                       K,                       Greek_kappa,             NoSymbol,                U2295,                   U2296,                   U2297,                   U2299                    ] };
+    	symbols[Group1] = [ k,                       K,                       Greek_kappa,             NoSymbol,                parenright,                   U2296,                   U2297,                   U2299                    ] };
     key <AC09> {
-    	symbols[Group1] = [ l,                       L,                       Greek_lambda,            Greek_LAMBDA,            U22B6,                   U2112,                   NoSymbol,                U2113                 ] };
+    	symbols[Group1] = [ l,                       L,                       Greek_lambda,            Greek_LAMBDA,            minus,                   U2112,                   NoSymbol,                U2113                 ] };
     key <AC10> {
-    	symbols[Group1] = [ odiaeresis,              Odiaeresis,              section,                 U2020,                   U2194,                   U21D4,                   U21B6,                   U21B7                    ] };
+    	symbols[Group1] = [ odiaeresis,              Odiaeresis,              section,                 U2020,                   colon,                   U21D4,                   U21B6,                   U21B7                    ] };
     key <AC11> {
     	symbols[Group1] = [ adiaeresis,              Adiaeresis,              numbersign,              U2021,                   rightarrow,              U21D2,                   U21A6,                   NoSymbol                 ] };
     key <BKSL> {
@@ -186,27 +185,27 @@ xkb_symbols "basis" {
     key <LSGT> {
         symbols[Group1] = [ less,                    greater,                 bar,                     U2016,                   lessthanequal,              U226A,                brokenbar,                  U2610                 ] };
     key <AB01> {
-    	symbols[Group1] = [ y,                       Y,                       Greek_psi,               Greek_PSI,               greaterthanequal,        U226B,                   U2714,                   U2611                    ] };
+    	symbols[Group1] = [ y,                       Y,                       Greek_psi,               Greek_PSI,               EuroSign,        U226B,                   U2714,                   U2611                    ] };
     key <AB02> {
-    	symbols[Group1] = [ x,                       X,                       Greek_xi,                Greek_XI,                multiply,                U03F5,                   U2718,                   U2612                 ] };
+    	symbols[Group1] = [ x,                       X,                       Greek_xi,                Greek_XI,                dollar,                U03F5,                   U2718,                   U2612                 ] };
     key <AB03> {
-    	symbols[Group1] = [ c,                       C,                       Greek_chi,               Greek_CHI,               U2102,                   U2201,                   U2103,                   copyright                ] };
+    	symbols[Group1] = [ c,                       C,                       Greek_chi,               Greek_CHI,               bar,                   U2201,                   U2103,                   copyright                ] };
     key <AB04> {
-    	symbols[Group1] = [ v,                       V,                       NoSymbol,                NoSymbol,                U2200,                   U20D7,                   NoSymbol,                NoSymbol                 ] };
+    	symbols[Group1] = [ v,                       V,                       NoSymbol,                NoSymbol,                asciitilde,                   U20D7,                   NoSymbol,                NoSymbol                 ] };
     key <AB05> {
-    	symbols[Group1] = [ b,                       B,                       Greek_beta,              NoSymbol,                U2203,                   U2204,                   U266D,                   NoSymbol                 ] };
+    	symbols[Group1] = [ b,                       B,                       Greek_beta,              NoSymbol,                NoSymbol,                   U2204,                   U266D,                   NoSymbol                 ] };
     key <AB06> {
-    	symbols[Group1] = [ n,                       N,                       Greek_nu,                NoSymbol,                U2115,                   nabla,                   U266F,                   U2135                    ] };
+    	symbols[Group1] = [ n,                       N,                       Greek_nu,                NoSymbol,                plus,                   nabla,                   U266F,                   U2135                    ] };
     key <AB07> {
-    	symbols[Group1] = [ m,                       M,                       Greek_mu,                NoSymbol,                U22A8,                   U22AD,                   NoSymbol,                NoSymbol                 ] };
+    	symbols[Group1] = [ m,                       M,                       Greek_mu,                NoSymbol,                percent,                   U22AD,                   NoSymbol,                NoSymbol                 ] };
     key.type[Group1] = "EIGHT_LEVEL";
     key <AB08> {
-    	symbols[Group1] = [ comma,                   semicolon,               U2022,                   U2023,                   U22A2,                   U22AC,                   NoSymbol,                NoSymbol                 ] };
+    	symbols[Group1] = [ comma,                   semicolon,               U2022,                   U2023,                   quotedbl,                   U22AC,                   NoSymbol,                NoSymbol                 ] };
     key <AB09> {
-    	symbols[Group1] = [ period,                  colon,                   ellipsis,                periodcentered,          U22C5,                   U2215,                   NoSymbol,                NoSymbol                 ] };
+    	symbols[Group1] = [ period,                  colon,                   ellipsis,                periodcentered,          apostrophe,                   U2215,                   NoSymbol,                NoSymbol                 ] };
     key.type[Group1] = "EIGHT_LEVEL_SEMIALPHABETIC";
     key <AB10> {
-    	symbols[Group1] = [ minus,                   underscore,              endash,                  emdash,                  U2212,                   U2213,                   hyphen,                  U2015                    ] };
+    	symbols[Group1] = [ minus,                   underscore,              endash,                  emdash,                  semicolon,                   U2213,                   hyphen,                  U2015                    ] };
     key.type[Group1] = "EIGHT_LEVEL";
     key <AB11> {
         symbols[Group1] = [ ISO_Level5_Shift,              apostrophe,              rightdoublequotemark,    leftsinglequotemark,     at,                      Greek_upsilon,           nabla,                   NoSymbol                 ] };
@@ -271,7 +270,7 @@ xkb_symbols "basis" {
     // --------------------------------------------------------------
     key  <KP0> {
     	symbols[Group1] = [ KP_0,                    U2423,                   percent,                 U2030,                   KP_Insert,               KP_Insert,               U2500,                   NoSymbol                 ] };
-    
+
     key <KPDL> {
     	symbols[Group1] = [ KP_Separator,            period,                  comma,                   minutes,                 KP_Delete,               KP_Delete,               seconds,                 NoSymbol                 ] };
 
